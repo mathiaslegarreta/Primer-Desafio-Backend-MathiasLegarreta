@@ -25,11 +25,9 @@ class ProductManager {
             img,
             code,
             stock
-
         }
 
         this.products.push(newProduct);
-
     }
 
     getProducts() {
@@ -43,12 +41,29 @@ class ProductManager {
             console.log("Not Found");
         } else {
             console.log(product);
-
         }
-
-
     }
-
-
-
 }
+
+
+//Testing
+
+// 1)
+const manager = new ProductManager();
+
+// 2)
+console.log(manager.getProducts());
+
+// 3)
+manager.addProduct("Producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
+
+// 4)
+console.log(manager.getProducts());
+
+// 5)
+manager.addProduct("Producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25)
+
+// 6)
+
+console.log("Finding products");
+manager.getProductById(1);
