@@ -28,6 +28,8 @@ class ProductManager {
 
         }
 
+        this.products.push(newProduct);
+
     }
 
     getProducts() {
